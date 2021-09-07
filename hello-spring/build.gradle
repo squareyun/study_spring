@@ -4,6 +4,8 @@ plugins {
 	id 'java'
 }
 
+apply plugin: 'idea'
+
 group = 'hello'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
@@ -16,6 +18,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	runtimeOnly('org.springframework.boot:spring-boot-devtools')
 }
 
 test {
